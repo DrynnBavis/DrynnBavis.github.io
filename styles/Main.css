@@ -119,21 +119,25 @@ img {
 #manulife {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/pictures/manulife.png");
     background-size: cover;
+    background-position: center;
 }
 
 #gyptech {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/pictures/gyptech2.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 #binaryClock {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/pictures/binaryClock.jpg");
     background-size: cover;
+    background-position: center;
 }
 
 #l5kcompiler {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/pictures/L5KCompiler.png");
     background-size: cover;
+    background-position: center;
 }
 
 .welcome {
