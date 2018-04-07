@@ -1,127 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/Main.css">
-</head>
-<body>    
-    <section id="welcome" class="welcome parallax">
-        <h1 class="welcome--title font--OilCan">Brynn Davis</h1>
-        <div class="welcome--link-container font--Edmondsans">
-            <a class="welcome--link" href="#about">about</a>
-            <a class="welcome--link" href="#work">work</a>
-            <a class="welcome--link" href="#projects">projects</a>
-            <a class="welcome--link" href="#contact">contact</a>
-        </div>        
-    </section>
-    <section id="about">
-        <div class="details banner background--beige">
-            <h1 class="font--Signika-slab">A little bit about me</h1>
-            <p class="text--centered">
-                Hi! I am a Mechatronics student at the University of Waterloo currently in his second
-                year. I've got a passion for designing and building all things tech-related! I'm currently
-                obsessed with various Stack Exchange websites and developing my electronics skills. Scroll
-                down a bit to see some of the latest things I've been monkeying around with.
-            </p>
-        </div>
-    </section>
-    <section id="work">
-        <div class="header-with-divider background--dark-beige">
-            <h1 class="font--large font--Italiana">Co-op Experience</h1>
-        </div>
-        <div class="work">
-            <div class="work--tile">
-                <div class="work--overlay">
-                    <div class="work--popup">
-                        <h2 class="white">Show me some work!</h2>
-                        <div class="work--link-wrapper">
-                            <a href="#" target="_blank" class="work--button-link">VIEW</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="gyptech" class="work--image"></div>
-                <div class="work--details white">
-                    <h2 class="work--title">Gyptech</h2>
-                    <div class="work--description">Analytic Solutions</div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="centre-panel">
+            <h1 class="brown font" id="nametag">Brynn Davis</h1>
+            <div id="contact">
+                <hr/>
+                <div class="links">
+                    <a class="brown font contact-item" href="https://github.com/DrynnBavis" target="_blank"><span class="fa fa-github"></span> GitHub</a>
+                    <a class="brown font contact-item" href="https://stackoverflow.com/users/6822886/capn-jack?tab=profile" target="_blank"><span class="fa fa-stack-overflow"></span> StackOverflow</a>
+                    <a class="brown font contact-item" href="https://www.linkedin.com/in/brynn-davis-a7b637133/" target="_blank"><span class="fa fa-linkedin-square"></span> LinkedIn</a>
+                    <a class="brown font contact-item" href="mailto:drynnbavis@gmail.com"><span class="fa fa-envelope"> Email</span></a>
                 </div>
             </div>
-            <div class="work--tile">
-                <div class="work--overlay">
-                    <div class="work--popup">
-                        <h2 class="white">Show me some work!</h2>
-                        <div class="work--link-wrapper">
-                            <a href="#" target="_blank" class="work--button-link">VIEW</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="manulife" class="work--image"></div>
-                <div class="work--details white">
-                    <h2 class="work--title">Manulife</h2>
-                    <div class="work--description">Web-Dev Full Stack</div>
-                </div>
-            </div>
+            <a class="green font resume" href="Resume.pdf" target="_blank">Download Resume</a>
         </div>
-    </section>
-    <section id="projects">
-        <div class="details banner background--beige">
-            <h1 class="font--Signika-slab">Some stuff I'm working on</h1>
-            <p class="text--centered">
-                Feel free to <a>ask me</a> any questions about these projects! I'd love a chance to talk
-                your ear off about any one of 'em. 
-                
-                Currently I'm working on restoring a vintage tube-radio for
-                personal use and curiosity.
-            </p>
-        </div>
-        <div class="header-with-divider background--dark-beige">
-            <h1 class="font--large font--Italiana">Personal Projects</h1>
-        </div>
-        <div class="work">
-            <div class="work--tile">
-                <div class="work--overlay">
-                    <div class="work--popup">
-                        <h2 class="white">Pst... Wanna see more?</h2>
-                        <div class="work--link-wrapper">
-                            <a href="#" target="_blank" class="work--button-link">Yeah!</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="l5kcompiler" class="work--image"></div>
-                <div class="work--details white">
-                    <h2 class="work--title">PLC File Maker</h2>
-                    <div class="work--description">Give it files and it makes more files.. woah!</div>
-                </div>
-            </div>
-            <div class="work--tile">
-                <div class="work--overlay">
-                    <div class="work--popup">
-                        <h2 class="white">Pst... Wanna see more?</h2>
-                        <div class="work--link-wrapper">
-                            <a href="#" target="_blank" class="work--button-link">Yeah!</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="binaryClock" class="work--image"></div>
-                <div class="work--details white">
-                    <h2 class="work--title">Binary Clock</h2>
-                    <div class="work--description">01000110 01010100 01010111</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="footer">
-        <h1 class="footer--title font--Signika-slab">Let's be friends <span class="mini">forever.</span></h1>
-        <div class="footer--socialMedia">
-            <a class="footer--socialMedia-item" href="https://github.com/DrynnBavis" target="_blank"><span class="fa fa-github"></span> Github</a>
-            <a class="footer--socialMedia-item" href="https://stackoverflow.com/users/6822886/capn-jack?tab=profile" target="_blank"><span class="fa fa-stack-overflow"></span> StackOverflow</a>
-            <a class="footer--socialMedia-item" href="https://www.linkedin.com/in/brynn-davis-a7b637133/" target="_blank"><span class="fa fa-linkedin-square"></span> LinkedIn</a>
-            <a class="footer--socialMedia-item" href="mailto:drynnbavis@gmail.com"><span class="fa fa-envelope"></span> Email</a>
-        </div>
-    </section>
-    <script src="https://use.fontawesome.com/7c4c923c6c.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="scripts/Main.js"></script>
-    <script src="scripts/SmoothScroll.js"></script>
-</body>
+        <script src="https://use.fontawesome.com/7c4c923c6c.js"></script>
+    </body>
 </html>

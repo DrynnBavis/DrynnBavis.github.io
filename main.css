@@ -1,0 +1,99 @@
+@font-face {
+	font-family: JosefinSans-Regular;
+	src: url('JosefinSans-Regular.ttf') format('truetype');
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #231f20;
+}
+
+#centre-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+#nametag {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+    white-space: nowrap;
+    margin: auto;
+}
+
+.bar{
+    display: block;
+    width: 100%;
+    height: 10px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    min-width: 500px;
+    max-width: 100vw;
+}
+
+.contact-item {
+    display: block;
+    align-self: auto;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+.resume {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 60px;
+    font-size: 1.2em;
+}
+
+.font {
+    font-family: JosefinSans-Regular;
+}
+
+.brown {
+    color: #C7B299;
+}
+
+.green {
+    color: #8ad0bf;
+}
+
+.font::selection {
+    background: #C7B299; /* WebKit/Blink Browsers */
+    color: #231f20;
+}
+.font::-moz-selection {
+    background: #C7B299; /* Gecko Browsers */
+    color: #231f20
+}
+
+a:hover {
+    color: white;
+    transition-duration: 0.5s;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
