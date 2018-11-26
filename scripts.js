@@ -26,7 +26,3 @@
         $("#cat").css("transform", "rotate(" + angle * -1 +"rad)");
     }
 })();
-
-document.onclick = function() {
-    alert(window.innerHeight);
-}
