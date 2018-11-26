@@ -92,6 +92,14 @@ hr {
     padding: 0;
 }
 
+#cat {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 100px;
+    width: 100px;
+}
+
 @media only screen and (max-width: 600px) {
     .contact-item {
         white-space: normal;
