@@ -23,6 +23,6 @@
 
         // use x/y coords to rotate image
         var angle = Math.atan2(maxY - event.pageY, event.pageX);
-        $("#cat").css("transform", "rotate(" + angle * -1 +"rad)");
+        $("#cat").css("transform", "rotate(" + angle * -0.8 +"rad)");
     }
 })();
