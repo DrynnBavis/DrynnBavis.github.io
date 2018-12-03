@@ -21,8 +21,12 @@
               (doc && doc.clientTop  || body && body.clientTop  || 0 );
         }
 
-        // use x/y coords to rotate image
+        // TODO: Use x/y values to rotate heads
         var angle = Math.atan2(maxY - event.pageY, event.pageX);
         $("#cat").css("transform", "rotate(" + angle * -0.8 +"rad)");
     }
 })();
+
+$("#face").click(function () {
+    $(".woodsprite-container").toggleClass("hidden");
+});
