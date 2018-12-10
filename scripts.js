@@ -31,18 +31,18 @@ var head3 = [0,0];
         angle1 = Math.atan2( event.pageY - head1[0], event.pageX - head1[1]);
         angle2 = Math.atan2( event.pageY - head2[0], event.pageX - head2[1]);
         angle3 = Math.atan2( event.pageY - head3[0], event.pageX - head3[1]);
-        $("#woodsprite-head1").css("transform", "rotate(" + angle1 + "rad)");
-        $("#woodsprite-head2").css("transform", "rotate(" + angle2 + "rad)");
-        $("#woodsprite-head3").css("transform", "rotate(" + angle3 +"rad)");
+        $("#kodama-head1").css("transform", "rotate(" + angle1 + "rad)");
+        $("#kodama-head2").css("transform", "rotate(" + angle2 + "rad)");
+        $("#kodama-head3").css("transform", "rotate(" + angle3 + "rad)");
     }
 })();
 
 $("#face").click(function () {
     // Reveal/hide heads
-    $(".woodsprite-container").toggleClass("hidden");
+    $(".kodama-container").toggleClass("hidden");
     
     //get location of heads
-    head1 = [$("#woodsprite-head1").offset().top + $("#woodsprite-head1").height() / 2, $("#woodsprite-head1").offset().left + $("#woodsprite-head1").width() / 2];
-    head2 = [$("#woodsprite-head2").offset().top + $("#woodsprite-head2").height() / 2, $("#woodsprite-head2").offset().left + $("#woodsprite-head2").width() / 2];
-    head3 = [$("#woodsprite-head3").offset().top + $("#woodsprite-head3").height() / 2, $("#woodsprite-head3").offset().left + $("#woodsprite-head3").width() / 2];
+    head1 = [$("#kodama-head1").offset().top + $("#kodama-head1").height() / 2, $("#kodama-head1").offset().left + $("#kodama-head1").width() / 2];
+    head2 = [$("#kodama-head2").offset().top + $("#kodama-head2").height() / 2, $("#kodama-head2").offset().left + $("#kodama-head2").width() / 2];
+    head3 = [$("#kodama-head3").offset().top + $("#kodama-head3").height() / 2, $("#kodama-head3").offset().left + $("#kodama-head3").width() / 2];
 });
