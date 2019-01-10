@@ -67,6 +67,7 @@ $("body").click(function(){
 $("#face").click(function () {
     // Reveal/hide heads
     $(".kodama-container").toggleClass("hidden"); 
+    $(".kodama-container").toggleClass("visible");
     
     // Get location of heads
     head1 = [$("#kodama-head1").offset().top + $("#kodama-head1").height() / 2, $("#kodama-head1").offset().left + $("#kodama-head1").width() / 2];
