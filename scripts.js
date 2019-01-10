@@ -2,6 +2,7 @@
 var head1 = [0,0];
 var head2 = [0,0];
 var head3 = [0,0];
+var ignoreEvent = false;
 
 (function() {
     document.onmousemove = handleMouseMove;
@@ -38,28 +39,34 @@ var head3 = [0,0];
 // Rattle their heads when clicked
 $("body").click(function(){
     // Only rattle if visible
-    if ($(".kodama-container").hasClass("hidden") != true){
-        // Pick a random Kodama
-        var KodamaHead;
-        var random = Math.random() * 3;
-        if (random > 2){
-            KodamaHead = $("#wrapper-head3");        
-        }
-        else if (random > 1){
-            KodamaHead = $("#wrapper-head2");
+    if ($(".kodama-container").hasClass("visible")){
+        // ignore the click if it was face
+        if(ignoreEvent){
+            ignoreEvent = false;
         }
         else{
-            KodamaHead = $("#wrapper-head1");
+            // Pick a random Kodama
+            var KodamaHead;
+            var random = Math.random() * 3;
+            if (random > 2){
+                KodamaHead = $("#wrapper-head3");        
+            }
+            else if (random > 1){
+                KodamaHead = $("#wrapper-head2");
+            }
+            else{
+                KodamaHead = $("#wrapper-head1");
+            }
+
+            // Add animation
+            KodamaHead.addClass("rattling");
+
+            // Remove animation on completion
+            KodamaHead.one("webkitAnimationEnd oanimationend oAnimationEnd msAnimationEnd animationend",   
+            function(e) {
+                $(this).removeClass("rattling");
+            });
         }
-        
-        // Add animation
-        KodamaHead.addClass("rattling");
-        
-        // Remove animation on completion
-        KodamaHead.one("webkitAnimationEnd oanimationend oAnimationEnd msAnimationEnd animationend",   
-        function(e) {
-            $(this).removeClass("rattling");
-        });
     }
 });
 
@@ -68,6 +75,7 @@ $("#face").click(function () {
     // Reveal/hide heads
     $(".kodama-container").toggleClass("hidden"); 
     $(".kodama-container").toggleClass("visible");
+    ignoreEvent = true;
     
     // Get location of heads
     head1 = [$("#kodama-head1").offset().top + $("#kodama-head1").height() / 2, $("#kodama-head1").offset().left + $("#kodama-head1").width() / 2];
